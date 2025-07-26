@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main(){
 
 int choice;
@@ -28,10 +29,17 @@ int choice;
                 balance-= amount;
                 break;
             case 4:
-                printf("thank you");
+                printf("thank you! see you again");
                 return 0;
 
             default :
-                printf("Invalid statement/n");
-            }
-
+                printf("Invalid statement\n");
+                
+    }
+    
+    while (getchar() != '\n');
+    }
+    
+    return 0;
+}
+    
